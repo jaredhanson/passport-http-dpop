@@ -1,0 +1,56 @@
+{
+  "name": "passport-http-dpop",
+  "version": "1.0.1",
+  "description": "HTTP DPoP authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "auth",
+    "authn",
+    "authentication",
+    "authz",
+    "authorization",
+    "http",
+    "dpop",
+    "token",
+    "oauth"
+  ],
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "https://www.jaredhanson.me/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaredhanson/passport-http-dpop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaredhanson/passport-http-dpop/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/jaredhanson"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "passport-strategy": "1.x.x"
+  },
+  "devDependencies": {
+    "make-node": "0.4.6",
+    "mocha": "2.x.x",
+    "chai": "2.x.x",
+    "chai-passport-strategy": "3.x.x"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "mocha --require ./test/bootstrap/node --recursive"
+  }
+}
