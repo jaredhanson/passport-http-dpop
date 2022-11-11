@@ -15,7 +15,7 @@ describe('Strategy', function() {
   it('should authenticate request with valid credentials', function(done) {
     var strategy = new Strategy(function(token, cb) {
       expect(token).to.equal('Kz~8mXK1EalYznwH-LC-1fBAo.4Ljp~zsPE_NeO.gxU');
-      return cb(null, { id: '248289761001' });
+      return cb(null, { id: '248289761001' }, '0ZcOCORZNYy-DWpqq30jZyJGHTN0d2HglBV3uiguA4I');
     });
     
     chai.passport.use(strategy)
