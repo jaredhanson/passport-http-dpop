@@ -20,6 +20,10 @@ describe('Strategy', function() {
     
     chai.passport.use(strategy)
       .request(function(req) {
+        req.connection = {};
+        req.connection.encrypted = true;
+        req.url = '/protectedresource';
+        req.headers['host'] = 'resource.example.org';
         req.headers['authorization'] = 'DPoP Kz~8mXK1EalYznwH-LC-1fBAo.4Ljp~zsPE_NeO.gxU';
         req.headers['dpop'] = 'eyJ0eXAiOiJkcG9wK2p3dCIsImFsZyI6IkVTMjU2IiwiandrIjp7Imt0eSI6Ik' +
     'VDIiwieCI6Imw4dEZyaHgtMzR0VjNoUklDUkRZOXpDa0RscEJoRjQyVVFVZldWQVdCR' +
