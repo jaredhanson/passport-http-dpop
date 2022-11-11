@@ -39,6 +39,8 @@
   ],
   "main": "./lib",
   "dependencies": {
+    "jwk-to-pem": "^2.0.5",
+    "jws": "^4.0.0",
     "passport-strategy": "1.x.x"
   },
   "devDependencies": {
